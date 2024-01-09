@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block servicio %}
+active
+{% endblock servicio %}
+
+{% block content %}
+<!-- Servicios Section -->
+<section id="servicios" class="py-5">
+  <div class="container">
+    <h2 class="display-4 text-center mb-4">Nuestros Servicios</h2>
+    <div class="row">
+      <!-- Servicio de Autos -->
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <img src="{% static 'images/imagen1.jpg' %}" class="card-img-top" alt="Plan Pandero de Auto">
+          <div class="card-body">
+            <h5 class="card-title">Plan Pandero de Auto</h5>
+            <p class="card-text">Facilitar la posesión de vehículos mediante soluciones financieras colaborativas y flexibles para nuestros socios.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Servicio de Terrenos -->
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <img src="{% static 'images/imagen1.jpg' %}" class="card-img-top" alt="Plan Pandero de Terrenos">
+          <div class="card-body">
+            <h5 class="card-title">Plan Pandero de Terrenos</h5>
+            <p class="card-text">Empoderar a nuestros miembros para que logren la propiedad de terrenos, creando un camino hacia la realización de sus proyectos a través de soluciones financieras innovadoras y colaborativas.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Servicio de Casas -->
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <img src="{% static 'images/imagen1.jpg' %}" class="card-img-top" alt="Plan Pandero de Casas">
+          <div class="card-body">
+            <h5 class="card-title">Plan Pandero de Casas</h5>
+            <p class="card-text">Facilitar la adquisicion de viviendas mediante soluciones financieras colaborativas, que harán realidad la casa propia para nuestros socios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

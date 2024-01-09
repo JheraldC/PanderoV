@@ -1,0 +1,205 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block navbar %} fixed-top {% endblock navbar %}
+
+{% block inicio %} active {% endblock inicio %} 
+
+{% block content %}
+
+<!-- Hero -->
+<section class="hero-section">
+  <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+    <h1>Bienvenidos a Pandero V</h1>
+    <h3>Únete a nuestra comunidad y participa en sorteos mensuales para tu próximo auto.</h3>
+  </div>
+</section>
+<!-- End Hero -->
+
+<!-- Beneficios Section -->
+<section class="benefits py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">¿Por qué Pandero V es tu mejor opción?</h2>
+    <div class="row">
+      <!-- Beneficio 1 -->
+      <div class="col-md-4 text-center">
+        <i class="fas fa-award fa-3x mb-3"></i>
+        <h4>Oportunidad de Ganar</h4>
+        <p>Con un plan de ahorro mensual, acumulas dinero para comprar el auto de tus sueños al final del plazo acordado.</p>
+      </div>
+      <!-- Beneficio 2 -->
+      <div class="col-md-4 text-center">
+        <i class="fas fa-calendar-alt fa-3x mb-3"></i>
+        <h4>Plan de Ahorro</h4>
+        <p>Planifica tu futuro con nuestro sistema de ahorro programado y seguro que te permite alcanzar tus metas.</p>
+      </div>
+      <!-- Beneficio 3 -->
+      <div class="col-md-4 text-center">
+        <i class="fas fa-users fa-3x mb-3"></i>
+        <h4>Comunidad de Confianza</h4>
+        <p>Únete a una comunidad sólida y confiable que crece y gana junta, con transparencia y seguridad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Servicios Section -->
+<section id="servicios" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="display-4 text-center mb-4" style="color: black !important;"><strong>Nuestros Servicios</strong></h2>
+    <div class="row g-4">
+      <!-- Servicio de Compra de Carro -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card card h-100">
+          <img
+            src="{% static 'images/imagen1.jpg' %}"
+            class="card-img-top"
+            alt="Compra de Carro"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Compra de Carro</h5>
+            <p class="card-text">
+            Proporcionamos el medio para concretar nuestro fondo colectivo y adquirir un automóvil.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Servicio de Compra de Casa -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card card h-100">
+          <img
+            src="{% static 'images/imagen1.jpg' %}"
+            class="card-img-top"
+            alt="Compra de Casa"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Compra de Casa</h5>
+            <p class="card-text">
+            Agrupamos a socios en fondos colectivos, brindándote la oportunidad de adquirir tu propia vivienda.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Servicio de Compra de Terrenos -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card card h-100">
+          <img
+            src="{% static 'images/imagen1.jpg' %}"
+            class="card-img-top"
+            alt="Compra de Terrenos"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Compra de Terrenos</h5>
+            <p class="card-text">
+            Ahorra con nosotros y asegura el terreno para construir tu hogar.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Puedes añadir más servicios aquí -->
+    </div>
+  </div>
+</section>
+<!-- End Servicios Section -->
+
+<!-- Preguntas -->
+<section class="faq py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
+    <div class="accordion" id="accordionFAQ">
+      <!-- Pregunta 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            ¿Cuántos socios integran cada grupo en el Pandero Taxi V?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+          <div class="accordion-body">
+            <strong>Cada grupo de Pandero Taxi V está compuesto por 60 socios.</strong>
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            ¿Con qué frecuencia se realizarán los sorteos para obtener un auto en el Pandero Taxi V?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+          <div class="accordion-body">
+            <strong>Los sorteos se llevarán a cabo mensualmente, con un ganador cada 30 días.</strong>
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            ¿Cuál es la duración total del Pandero Taxi V para adquirir un automóvil?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+          <div class="accordion-body">
+            <strong>El Pandero Taxi V tendrá una duración de 60 meses.</strong>
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            ¿Cuáles son las consecuencias de no asistir a las asambleas en el Pandero Taxi V?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+          <div class="accordion-body">
+            <strong>La no asistencia a las asambleas resultará en una multa de 20 soles y la exclusión del sorteo.</strong>
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            ¿Qué sucede con los socios que no estén al día en sus cuotas en el Pandero Taxi V?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+          <div class="accordion-body">
+            <strong>Quienes no estén al día en sus cuotas no participarán en el sorteo.</strong>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            ¿Como me puedo inscribir en el Pandero Taxi V?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+          <div class="accordion-body">
+            <strong>Quienes no estén al día en sus cuotas no participarán en el sorteo.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Preguntas -->
+ 
+    </div>
+  </div>
+</section>
+
+
+<!-- Call to Action o sección de contacto -->
+<section class="cta-section py-5 bg-light">
+  <div class="container text-center">
+    <h3>¿Interesado en nuestros servicios?</h3>
+    <p>Llámanos o escríbenos un email para más información.</p>
+    <a href="/contacto" class="btn btn-primary">Contacto</a>
+  </div>
+</section>
+{% endblock %}

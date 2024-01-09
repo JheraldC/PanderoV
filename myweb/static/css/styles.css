@@ -1,0 +1,267 @@
+.navbar {
+  background-color: #fff;
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  color: #009970;
+  font-size: 24px;
+  transition: 0.3s color;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #000;
+}
+
+.hero-section {
+  background: url(../images/imagen1.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-section::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-section .container {
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.hero-section h3 {
+  font-size: 0.7em;
+  text-align: center;
+}
+
+#nosotros {
+  background: #f8f9fa; /* Color de fondo para la sección */
+  color: #333; /* Color del texto */
+  margin: 5rem 0;
+}
+
+#nosotros h2 {
+  color: #009970; /* Color del título para que coincida con tu esquema de colores */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 0.8em !important;
+  }
+  h3 {
+    font-size: 0.7em !important;
+  }
+}
+
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+/* Estilos para los iconos de FontAwesome */
+#nosotros .fa-handshake {
+  color: #007bff; /* Color azul para el icono de 'Misión' */
+}
+
+#nosotros .fa-eye {
+  color: #ffc107; /* Color amarillo para el icono de 'Visión' */
+}
+
+#nosotros {
+  background-color: #f8f9fa; /* Fondo claro para la sección */
+}
+
+#nosotros .row > div {
+  margin-bottom: 30px; /* Espacio entre las columnas */
+}
+
+#nosotros h2.display-4 {
+  font-size: 2.5rem; /* Tamaño más adecuado para los títulos */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilos para la sección 'Quiénes Somos' */
+#nosotros h2.display-4:first-of-type {
+  color: #28a745; /* Esto mantendrá el título 'Quiénes Somos' en verde */
+}
+
+#nosotros p {
+  line-height: 1.6; /* Espaciado de línea para mejorar la legibilidad */
+  text-align: justify;
+}
+
+#nosotros h3 {
+  color: #0056b3; /* Color de la marca para los subtítulos */
+  margin-bottom: 15px; /* Espacio debajo de los subtítulos */
+}
+
+#nosotros .d-flex div {
+  text-align: center;
+  margin-bottom: 15px; /* Espacio debajo de cada valor */
+}
+
+/* Añadir colores específicos para cada icono de 'Valores' */
+#nosotros .fa-balance-scale { color: #17a2b8; } /* Color teal */
+#nosotros .fa-hands-helping { color: #28a745; } /* Color verde */
+#nosotros .fa-lock { color: #dc3545; } /* Color rojo */
+#nosotros .fa-heart { color: #6f42c1; } /* Color púrpura */
+
+/* Estilos para los títulos de 'Misión', 'Visión' y 'Valores' */
+#nosotros .col-md-4 h3 {
+  color: #343a40; /* Color oscuro para mejorar la legibilidad */
+}
+
+/* Asegurarse de que los párrafos y listados bajo los íconos estén alineados y bien espaciados */
+#nosotros .col-md-4 p, 
+#nosotros .col-md-4 ul {
+  text-align: justify; /* Alinear el texto a la izquierda */
+  padding-left: 0; /* Remover el padding izquierdo para listas */
+}
+
+#servicios {
+  background-color: #fff; /* Fondo blanco para la sección */
+  padding: 60px 0; /* Espaciado simétrico */
+}
+
+#servicios .display-4 {
+  color: #28a745; /* Color oscuro para los títulos */
+  font-size: 2.5rem;
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.service-card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para las tarjetas */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Evita que los elementos sobresalgan */
+  transition: box-shadow 0.3s ease-in-out; /* Efecto suave para la sombra */
+}
+
+.service-card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.service-card .card-img-top {
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Las imágenes cubren completamente el área */
+  width: 100%; /* Asegura que la imagen ocupe toda la anchura */
+}
+
+.service-card .card-body {
+  padding: 20px; /* Espaciado interno para el cuerpo de la tarjeta */
+}
+
+.service-card .card-title {
+  font-size: 1.25rem; /* Tamaño de fuente para los títulos */
+  color: #0056b3; /* Color distintivo para los títulos */
+  margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.service-card .card-text {
+  font-size: 1rem; /* Tamaño de fuente estándar */
+  color: #666; /* Color para texto normal */
+}
+
+#contact {
+  background-color: #f8f9fa; /* Fondo claro para la sección */
+  padding: 80px 0; /* Espaciado simétrico */
+}
+
+#contact .display-4 {
+  color: #28a745; /* Color oscuro para los títulos */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#contact .form-group {
+  margin-bottom: 1rem; /* Espacio entre campos del formulario */
+}
+
+#contact .form-control {
+  border-radius: 0.25rem; /* Bordes redondeados */
+  border: 1px solid #ced4da; /* Borde sutil */
+}
+
+#contact .form-label {
+  font-weight: bold; /* Texto en negrita */
+  color: #333; /* Color oscuro para los labels */
+}
+
+#contact button.btn {
+  width: auto; /* Auto para adaptarse al texto dentro */
+  padding: 10px 20px; /* Padding más grande */
+  margin-top: 20px; /* Espacio encima del botón */
+}
+
+.titulo-mapa{
+  margin-top: 4rem;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Aspect ratio de 16:9 */
+  position: relative;
+  height: 0;
+  margin: 1.2rem;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: none; /* Elimina el borde del iframe */
+}
+
+.text-justify {
+  text-align: justify;
+}
